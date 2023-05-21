@@ -38,5 +38,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://egarza27.github.io/JS411_Hackathon_HackerNewsApp"
+  "homepage": "https://egarza27.github.io/JS411_Hackathon_HackerNewsApp",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }

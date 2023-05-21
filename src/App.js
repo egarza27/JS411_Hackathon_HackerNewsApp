@@ -13,7 +13,7 @@ function App() {
     }
 
     const result = await axios.get(
-      `http://hn.algolia.com/api/v1/search?query=${e.target.value}`
+      `https://hn.algolia.com/api/v1/search?query=${e.target.value}`
     );
     console.log("result:", result.data.hits);
     setSearchResults(result.data.hits);
@@ -37,7 +37,11 @@ function App() {
           </span>
         </div>
         <div className="search-bar">
-          <input type="text" onChange={handleChange} />
+          <input
+            type="text"
+            onChange={handleChange}
+            placeholder="Search stories by title, url or author"
+          />
         </div>
       </header>
       <div className="search-results">
@@ -48,7 +52,7 @@ function App() {
                 <a>
                   <span className="article-title">{article.title}</span>
                 </a>
-                <a href={article.url}>
+                <a href={article.url} target="_blank">
                   <span className="article-url"> ({article.url})</span>
                 </a>
 
