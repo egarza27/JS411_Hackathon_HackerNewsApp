@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+/* body {
+  margin: 0;
+} */
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-body {
+  font-family: "Verdana,Geneva,sans-serif";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  background: #ff742b;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-logo img {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+  grid-column: 1;
+}
+
+.header-logo a {
+  text-decoration: none;
+  grid-column: 2;
+  margin-right: 25x;
+}
+
+.search-bar input[type="text"] {
+  width: 80%;
+  height: 42px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+.header-title {
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.search-results {
+  background: #f6f6ef;
+  padding: 15px;
+}
+
+.article {
+  position: relative;
+  margin-bottom: 10px;
+  background: #f6f6ef;
+}
+
+.article-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.article-url {
+  color: #696969;
+}
+
+.article-details {
+  font-size: 12px;
+  color: #696969;
 }
