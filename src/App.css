@@ -1,23 +1,21 @@
-/* body {
-  margin: 0;
-} */
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
 .main-body {
-  font-family: "Verdana,Geneva,sans-serif";
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 13px;
 }
 
 .header {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  padding: 10px 20px;
+  padding: 1px;
   background: #ff742b;
   font-size: 18px;
+  height: 65px;
 }
 
 .header-logo {
@@ -41,10 +39,10 @@ a {
 }
 
 .search-bar input[type="text"] {
-  width: 80%;
-  height: 42px;
-  padding: 8px;
-  font-size: 16px;
+  width: 70%;
+  height: 12px;
+  padding: 16px 144px 16px 54px;
+  font-size: 18px;
   border: 1px solid #ccc;
   border-radius: 0px;
 }
@@ -52,6 +50,7 @@ a {
 .header-title {
   margin-right: 20px;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .search-results {
@@ -66,9 +65,9 @@ a {
 }
 
 .article-title {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
   margin-right: 2px;
+  font-weight: 300;
 }
 
 .article-url {
@@ -76,6 +75,6 @@ a {
 }
 
 .article-details {
-  font-size: 12px;
+  font-size: 10.67px;
   color: #696969;
 }
